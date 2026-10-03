@@ -1,0 +1,19 @@
+name: SG-Art Pull Request Template
+description: Modèle de Pull Request
+
+sections:
+  - title: Description
+    placeholder: "Décrire clairement les modifications apportées."
+
+  - title: Motivation
+    placeholder: "Pourquoi ce changement est nécessaire."
+
+  - title: Tests
+    placeholder: "Lister les tests effectués."
+
+  - title: Checklist
+    items:
+      - Code conforme aux standards
+      - Documentation mise à jour
+      - Aucun fichier inutile ajouté
+      - Build fonctionnel
