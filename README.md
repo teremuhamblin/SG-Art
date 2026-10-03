@@ -23,6 +23,7 @@ SG-Art/
 │── docs/          # Dossier de documentations
 │── images/        # Dossier des images 
 │── README.md
+│── LICENSE
 │── .gitignore
 │── index.html     # Page principale du site
 │── style.css      # Styles optimisés
