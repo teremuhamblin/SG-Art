@@ -22,9 +22,9 @@
 SG-Art/
 │── docs/          # Dossier de documentations
 │── images/        # Dossier des images 
-│── README.md
-│── LICENSE
-│── .gitignore
+│── README.md      # Dépôt principal
+│── LICENSE        # Droits et limites dutilosations
+│── .gitignore     # Regle d'exclusion 
 │── index.html     # Page principale du site
 │── style.css      # Styles optimisés
 │── script.js      # Logique JS légère
