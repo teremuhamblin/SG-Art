@@ -1,0 +1,192 @@
+/* ============================
+   CORE RESET (Ultra-light)
+   ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ============================
+   GPU CLASS (global)
+   ============================ */
+.gpu {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+}
+
+/* ============================
+   NAVIGATION
+   ============================ */
+.nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 20px 0;
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 22px;
+    transition: opacity .25s ease, transform .25s ease;
+}
+
+.nav-list li.active a,
+.nav-list a:hover {
+    color: #fff;
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.tool-tip {
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity .25s ease, transform .25s ease;
+}
+
+.nav-list a:hover .tool-tip {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================
+   CONTAINER
+   ============================ */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.box {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+/* ============================
+   SECTIONS
+   ============================ */
+.section {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.section.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================
+   HOME SECTION
+   ============================ */
+.home {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-info {
+    max-width: 600px;
+}
+
+.home-info h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.home-info h3 {
+    font-size: 22px;
+    color: #ccc;
+}
+
+.desc {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* ============================
+   BUTTONS + SOCIAL
+   ============================ */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: .85;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.sci a {
+    font-size: 28px;
+    color: #fff;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.sci a:hover {
+    transform: scale(1.2);
+    opacity: .8;
+}
+
+/* ============================
+   IMAGE WRAPPER
+   ============================ */
+.img-wrapper {
+    max-width: 400px;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.1));
+    transition: transform .4s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
