@@ -20,6 +20,8 @@
 ### 📁 Structure du dépôt
 ```
 SG-Art/
+│── docs/          # Dossier de documentations
+│── images/        # Dossier des images 
 │── README.md
 │── .gitignore
 │── index.html     # Page principale du site
