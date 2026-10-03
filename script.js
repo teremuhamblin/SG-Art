@@ -1,33 +1,33 @@
-// ===============================
-// Quantum‑Era Navigation Engine
-// ===============================
+/* ==========================================
+   SG@Art — Quantum‑Era JS v3.2
+   Section Switching + GPU Transitions
+   ========================================== */
 
-const navItems = document.querySelectorAll('.nav-list li');
-const sections = document.querySelectorAll('.section');
+document.addEventListener("DOMContentLoaded", () => {
 
-// Activate section instantly with GPU fade
-function activateSection(id) {
-    sections.forEach(sec => {
-        sec.classList.remove('active');
-        if (sec.id === id) {
-            sec.classList.add('active');
-        }
+    const navLinks = document.querySelectorAll(".nav-list a");
+    const sections = document.querySelectorAll(".section");
+
+    function activateSection(id) {
+        sections.forEach(sec => {
+            sec.classList.remove("active");
+            if (sec.id === id) sec.classList.add("active");
+        });
+
+        navLinks.forEach(link => {
+            link.parentElement.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+                link.parentElement.classList.add("active");
+            }
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const target = link.getAttribute("href").substring(1);
+            activateSection(target);
+        });
     });
-}
 
-// Navigation click handler
-navItems.forEach(item => {
-    item.addEventListener('click', () => {
-        // Remove active from all
-        navItems.forEach(i => i.classList.remove('active'));
-
-        // Set active on clicked
-        item.classList.add('active');
-
-        // Extract target section ID
-        const target = item.querySelector('a').getAttribute('href').replace('#', '');
-
-        // Activate section
-        activateSection(target);
-    });
 });
