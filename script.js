@@ -1,59 +1,41 @@
 /* ==========================================
-   SG@Art HyperCube Quantum‑Era v5.0
-   Rotation X/Y • Military OPS
+   SG@Art — Quantum‑Era JS v4.0
+   Section Switching + Smooth Scroll
    ========================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
 
     const navLinks = document.querySelectorAll(".nav-list a");
-    const cube = document.querySelector(".hypercube");
     const sections = document.querySelectorAll(".section");
 
-    function rotateCube(target) {
+    function activateSection(id) {
+        sections.forEach(sec => {
+            sec.classList.toggle("active", sec.id === id);
+        });
 
-        let transform = "";
-
-        switch (target) {
-            case "home":
-                transform = "rotateY(0deg) rotateX(0deg)";
-                break;
-
-            case "about":
-                transform = "rotateY(-90deg) rotateX(0deg)";
-                break;
-
-            case "resume":
-                transform = "rotateY(-180deg) rotateX(0deg)";
-                break;
-
-            case "contact":
-                transform = "rotateY(90deg) rotateX(0deg)";
-                break;
-
-            case "market":
-                transform = "rotateX(-90deg) rotateY(0deg)";
-                break;
-
-            case "ops":
-                transform = "rotateX(90deg) rotateY(0deg)";
-                break;
-        }
-
-        cube.style.transform = transform;
-
-        sections.forEach(sec => sec.classList.remove("active"));
-        document.getElementById(target).classList.add("active");
+        navLinks.forEach(link => {
+            const li = link.parentElement;
+            li.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+        });
     }
 
     navLinks.forEach(link => {
         link.addEventListener("click", e => {
             e.preventDefault();
-            const target = link.getAttribute("href").substring(1);
-            rotateCube(target);
+            const targetId = link.getAttribute("href").substring(1);
+            activateSection(targetId);
 
-            navLinks.forEach(l => l.parentElement.classList.remove("active"));
-            link.parentElement.classList.add("active");
+            // Smooth scroll to top of container (mobile especially)
+            const container = document.querySelector(".container");
+            if (container) {
+                container.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
         });
     });
 
+    // Optional: ensure home is active on load
+    activateSection("home");
 });
