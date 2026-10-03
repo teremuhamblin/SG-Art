@@ -1,0 +1,16 @@
+name: SG-Art Code of Conduct
+description: Règles de conduite pour la communauté SG-Art
+
+rules:
+  - Respect mutuel obligatoire
+  - Pas de harcèlement, insultes ou comportements agressifs
+  - Pas de spam, publicité ou contenu non sollicité
+  - Collaboration constructive et professionnelle
+  - Respect des licences et droits d’auteur
+
+enforcement:
+  - Analyse des signalements
+  - Avertissement ou suspension selon gravité
+  - Bannissement en cas de récidive ou violation majeure
+
+contact: teremu@contact.local
