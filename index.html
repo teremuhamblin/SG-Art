@@ -1,230 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Charset early -->
-    <meta charset="UTF-8">
+<div class="hypercube-wrapper">
+    <div class="hypercube">
 
-    <!-- Mobile + edge-to-edge -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <!-- FACE 1 — HOME -->
+        <section id="home" class="face face-front section active">
+            <h2>Home</h2>
+            <p>Welcome to SG@Art HyperCube Quantum‑Era v5.0.</p>
+        </section>
 
-    <!-- SEO -->
-    <title>SG@Art | Stack Graphic Artistry</title>
-    <meta name="description" content="Portfolio of SG@Art, Stack Developer and Graphic Artistry specialized in modern MACRAMES development.">
+        <!-- FACE 2 — ABOUT -->
+        <section id="about" class="face face-right section">
+            <h2>About</h2>
+            <p>Stack Developer & Graphic Artistry.</p>
+        </section>
 
-    <!-- Critical CSS preload -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="style.css">
+        <!-- FACE 3 — RESUME -->
+        <section id="resume" class="face face-back section">
+            <h2>Resume</h2>
+            <p>Skills, experience, achievements.</p>
+        </section>
 
-    <!-- Boxicons (single optimized version) -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <!-- FACE 4 — CONTACT -->
+        <section id="contact" class="face face-left section">
+            <h2>Contact</h2>
+            <p>Get in touch with SG@Art.</p>
+        </section>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer">
+        <!-- FACE 5 — MARKET (TOP) -->
+        <section id="market" class="face face-top section">
+            <h2>Market</h2>
+            <p>Macramé creations available.</p>
+        </section>
 
-    <!-- Anti‑CLS + GPU hints -->
-    <style>
-        img { max-width: 100%; display: block; }
-        .gpu { will-change: transform, opacity; }
-    </style>
-</head>
+        <!-- FACE 6 — OPS (BOTTOM) -->
+        <section id="ops" class="face face-bottom section">
+            <h2>SG@Art Tactical OPS</h2>
+            <p>Macramé Engineering • Quantum‑Era • DevOps • Structural Art.</p>
+        </section>
 
-<body>
-
-    <!-- Navigation -->
-    <nav class="nav" aria-label="Main Navigation">
-        <ul class="nav-list">
-            <li class="active">
-                <a href="#home" class="gpu">
-                    <i class='bx bx-home-alt'></i>
-                    <span class="tool-tip">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#about" class="gpu">
-                    <i class='bx bx-user'></i>
-                    <span class="tool-tip">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#resume" class="gpu">
-                    <i class='bx bx-file'></i>
-                    <span class="tool-tip">Resume</span>
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio" class="gpu">
-                    <i class='bx bx-briefcase-alt-2'></i>
-                    <span class="tool-tip">Market</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact" class="gpu">
-                    <i class='bx bx-envelope'></i>
-                    <span class="tool-tip">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Container -->
-    <div class="container">
-        <div class="box">
-
-            <!-- HOME SECTION -->
-            <section id="home" class="section home active gpu">
-                <div class="home-info gpu">
-                    <h3>Hello I'm</h3>
-                    <h1>SG@Art</h1>
-                    <h3>Stack Developer Graphic Artistry</h3>
-
-                    <p class="desc">
-                        I am a dedicated Macramé Art Developer, crafting modern, elegant, and structurally refined macramé pieces.
-                    </p>
-
-                    <div class="btn-sci gpu">
-                        <a href="./files/SG@Art.pdf" download class="btn gpu">Download SHEETS</a>
-
-                        <div class="sci">
-                            <a target="_blank" href="https://github.com/teremuhamblin" aria-label="GitHub Profile" class="gpu">
-                                <i class="fa-brands fa-github"></i>
-                                <span class="tool-tip">Github</span>
-                            </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/teremuhamblin/" aria-label="LinkedIn Profile" class="gpu">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <span class="tool-tip">Linkedin</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="img-wrapper gpu">
-                    <div class="img-box home-img gpu">
-                        <img src="./images/sg@art.png"
-                             alt="SG@Art"
-                             loading="lazy"
-                             decoding="async"
-                             class="gpu">
-                    </div>
-                </div>
-            </section>
-
-            <!-- ABOUT SECTION -->
-            <section id="about" class="section about gpu">
-                <div class="about-info gpu">
-                    <h2>About Me</h2>
-                    <p>
-                        I am SG@Art — Stack Developer & Graphic Artistry.
-                        I design architectures and macramé artworks with precision, discipline, and modern aesthetics.
-                    </p>
-
-                    <p>
-                        My work blends <strong>full‑stack development</strong> with <strong>macramé structural art</strong>,
-                        creating elegant, optimized and artistic digital experiences.
-                    </p>
-                </div>
-
-                <div class="img-wrapper gpu">
-                    <div class="img-box gpu">
-                        <img src="./images/macrame1.jpg"
-                             alt="Macramé Art"
-                             loading="lazy"
-                             decoding="async"
-                             class="gpu">
-                    </div>
-                </div>
-            </section>
-
-            <!-- RESUME SECTION -->
-            <section id="resume" class="section resume gpu">
-                <div class="resume-info gpu">
-                    <h2>Resume</h2>
-
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>Full‑Stack Development (HTML, CSS, JS)</li>
-                        <li>Graphic Artistry & Macramé Design</li>
-                        <li>Performance Optimization</li>
-                        <li>Minimalist UI/UX Architecture</li>
-                    </ul>
-
-                    <h3>Experience</h3>
-                    <p>
-                        Creator of SG@Art — building modern, artistic, and optimized digital/macramé systems.
-                    </p>
-
-                    <h3>Achievements</h3>
-                    <p>
-                        Multiple macramé artworks, optimized mini‑sites, GPU‑accelerated interfaces,
-                        and Quantum‑Era design modules.
-                    </p>
-                </div>
-            </section>
-
-            <!-- MARKET / PORTFOLIO SECTION -->
-            <section id="portfolio" class="section portfolio gpu">
-                <div class="portfolio-info gpu">
-                    <h2>Market</h2>
-                    <p>Macramé creations available in the SG@Art collection.</p>
-
-                    <div class="grid gpu">
-
-                        <div class="card gpu">
-                            <h3>Suspension Macramé</h3>
-                            <p>Handcrafted structural piece.</p>
-                            <button class="btn gpu">View</button>
-                        </div>
-
-                        <div class="card gpu">
-                            <h3>Bracelet Macramé</h3>
-                            <p>Minimalist and elegant.</p>
-                            <button class="btn gpu">View</button>
-                        </div>
-
-                        <div class="card gpu">
-                            <h3>Wall Decoration</h3>
-                            <p>Signature SG@Art style.</p>
-                            <button class="btn gpu">View</button>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACT SECTION -->
-            <section id="contact" class="section contact gpu">
-                <div class="contact-info gpu">
-                    <h2>Contact</h2>
-                    <p>Get in touch with SG@Art.</p>
-
-                    <form class="form gpu">
-                        <label>Name</label>
-                        <input type="text" placeholder="Your name">
-
-                        <label>Email</label>
-                        <input type="email" placeholder="Your email">
-
-                        <label>Message</label>
-                        <textarea placeholder="Your message"></textarea>
-
-                        <button type="submit" class="btn gpu">Send</button>
-                    </form>
-
-                    <div class="contact-details gpu">
-                        <p>Email: contact@sg-art.fr</p>
-                        <p>Instagram: @sg_art</p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
     </div>
-
-    <!-- JS Optimisé Quantum‑Era -->
-    <script src="script.js" defer></script>
-
-</body>
-</html>
+</div>
