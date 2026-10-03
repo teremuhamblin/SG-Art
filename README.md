@@ -20,7 +20,7 @@
 ### 📁 Structure du dépôt
 ```
 SG-Art/
-│── .github/ Dossier et centre de commandement du projet
+│── .github/       # Dossier et centre de commandement du projet
 │── docs/          # Dossier de documentations
 │── images/        # Dossier des images 
 │── README.md      # Dépôt principal
