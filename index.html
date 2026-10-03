@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Charset early -->
+    <meta charset="UTF-8">
+
+    <!-- Mobile + edge-to-edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- SEO -->
+    <title>Muhammad Bilal Waris | Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of M. Bilal Waris, Full Stack Developer specialized in modern web applications, frontend and backend development.">
+
+    <!-- Critical CSS preload -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons (single optimized version) -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
+    <!-- Anti‑CLS + GPU hints -->
+    <style>
+        img { max-width: 100%; display: block; }
+        .gpu { will-change: transform, opacity; }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+            <li class="active">
+                <a href="#home" class="gpu">
+                    <i class='bx bx-home-alt'></i>
+                    <span class="tool-tip">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="gpu">
+                    <i class='bx bx-user'></i>
+                    <span class="tool-tip">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#resume" class="gpu">
+                    <i class='bx bx-file'></i>
+                    <span class="tool-tip">Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio" class="gpu">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                    <span class="tool-tip">Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="gpu">
+                    <i class='bx bx-envelope'></i>
+                    <span class="tool-tip">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+        <div class="box">
+
+            <!-- HOME SECTION -->
+            <section id="home" class="section home active gpu">
+                <div class="home-info gpu">
+                    <h3>Hello I'm</h3>
+                    <h1>M. Bilal Waris</h1>
+                    <h3>Full Stack Developer</h3>
+
+                    <p class="desc">
+                        I am a passionate Full Stack Developer with experience in both frontend and backend technologies.
+                        I build modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, PHP,
+                        MySQL, Laravel, and WordPress. I focus on clean code, performance, and continuous learning.
+                    </p>
+
+                    <div class="btn-sci gpu">
+                        <a href="./files/M_Bilal_Waris_CV.pdf" download class="btn gpu">Download CV</a>
+
+                        <div class="sci">
+                            <a target="_blank" href="https://github.com/BilalWaris2008" aria-label="GitHub Profile" class="gpu">
+                                <i class="fa-brands fa-github"></i>
+                                <span class="tool-tip">Github</span>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/bilalwaris2008/" aria-label="LinkedIn Profile" class="gpu">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span class="tool-tip">Linkedin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-wrapper gpu">
+                    <div class="img-box home-img gpu">
+                        <img src="./images/myimg.png"
+                             alt="Portrait of M. Bilal Waris"
+                             loading="lazy"
+                             decoding="async"
+                             class="gpu">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
