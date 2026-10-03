@@ -1,79 +1,90 @@
-# SG-Art — CHANGELOG
-Historique complet des versions du projet SG-Art (Macramé Tech Edition).
+# SG-Art — CHANGELOG (v1.0 → v10.0)
 
 ---
 
-## [v5.0.0] — Quantum-Era Final Edition
+## [v10.0.0] — Neural Macramé Quantum‑Era
 ### Nouveautés
-- [x] IA Macramé-Tech (génération de motifs)
-- [x] Animations complexes (tressage en temps réel)
-- [x] Interface immersive Quantum-UI
-- [x] Mode “Exposition virtuelle”
-- [x] Optimisation totale (GPU, lazy loading, cache)
-- [x] Système de thèmes avancés (Quantum / Or / Sable / Noir)
+- [x] IA complète Neural‑Macramé (génération illimitée)
+- [x] Interface neuro‑réactive (adaptation en temps réel)
+- [x] Moteur de tressage neuronal (patterns vivants)
+- [x] Simulation physique avancée (fibres, tension, gravité)
+- [x] Rendu WebGPU Quantum‑Mesh
+- [x] Mode XR holographique (galerie volumétrique)
+- [x] Optimisation totale (GPU, cache neural, lazy neural loading)
 
 ### Sécurité
-- [x] Audit complet du code
-- [x] Vérification IA (aucune fuite de données)
-- [x] Renforcement CI/CD Quantum-Era
+- [x] Audit IA complet
+- [x] Isolation des modèles neuronaux
+- [x] Sandbox GPU/WebGPU
+- [x] CI/CD Quantum‑Era renforcé
+
+---
+
+## [v9.0.0] — SG-Art Holo-Gallery
+- [x] Galerie holographique XR
+- [x] Navigation volumétrique
+- [x] Rendu 3D tressé
+- [x] Effets Quantum‑Light
+- [x] Optimisation WebGPU
+
+---
+
+## [v8.0.0] — Quantum-Mesh Renderer
+- [x] Rendu 3D tressé réaliste
+- [x] Simulation physique des fibres
+- [x] WebGPU + compute shaders
+- [x] Optimisation du pipeline graphique
+
+---
+
+## [v7.0.0] — Autonomous Studio
+- [x] Création automatique de motifs
+- [x] Auto‑curation des œuvres
+- [x] Optimisation dynamique
+- [x] Système de collections intelligentes
+
+---
+
+## [v6.0.0] — Neural Pattern Engine
+- [x] Moteur neuronal génératif
+- [x] Patterns vivants
+- [x] IA locale optimisée
+- [x] Sécurité renforcée
+
+---
+
+## [v5.0.0] — Quantum‑Era Final Edition
+- [x] IA Macramé-Tech
+- [x] Animations complexes
+- [x] Interface immersive Quantum‑UI
+- [x] Exposition virtuelle
+- [x] Optimisation totale
 
 ---
 
 ## [v4.0.0] — SG-Art Pro Studio
-### Nouveautés
-- [x] Studio Macramé-Tech (éditeur visuel)
-- [x] Générateur de motifs (SVG + CSS)
-- [x] Export PNG / SVG des créations
-- [x] Mode atelier (grille, guides, mesures)
-- [x] Système de collections (tri, tags, catégories)
-- [x] Optimisation du rendu (GPU + cache local)
-
-### Sécurité
-- [x] Validation des exports
-- [x] Protection des données locales
-- [x] Vérification des fichiers générés
+- [x] Studio créatif
+- [x] Générateur de motifs
+- [x] Export PNG/SVG
+- [x] Mode atelier
 
 ---
 
 ## [v3.0.0] — SG-Art Interactive
-### Nouveautés
-- [x] Galerie interactive (zoom, rotation, détails)
-- [x] Module “Tressage numérique” (animation fil-à-fil)
-- [x] Sections modulaires (drag & slide)
-- [x] Effets de profondeur (parallax GPU)
-- [x] Cartes animées pour chaque création
-- [x] Optimisation mobile avancée
-
-### Sécurité
-- [x] Sandbox JS pour modules interactifs
-- [x] Vérification des animations WebGL
-- [x] Protection contre scripts externes
+- [x] Galerie interactive
+- [x] Tressage numérique
+- [x] Parallax GPU
 
 ---
 
 ## [v2.0.0] — Quantum Macramé Expansion
-### Nouveautés
-- [x] Logo SG-Art 3D (tressage volumétrique)
-- [x] Effets holographiques (CSS + WebGL léger)
-- [x] Animations Quantum (glow dynamique, scanlines)
-- [x] Navigation fluide (scroll GPU)
-- [x] Mode sombre / clair / sable-or
-- [x] Compression des assets (SVG + PNG)
-
-### Sécurité
-- [x] Validation des SVG 3D
-- [x] Vérification des dépendances
-- [x] Renforcement CI/CD
+- [x] Logo 3D
+- [x] Hologrammes
+- [x] Animations Quantum
 
 ---
 
 ## [v1.0.0] — Foundation & Identité Visuelle
-### Création du projet
-- [x] Structure SG-Art (index.html, style.css, script.js)
-- [x] Identité visuelle Macramé-Tech (logo, badges, SVG)
-- [x] Emblème animé (rotation + pulsation)
-- [x] Dossier `.github/` complet (issues, PR, discussions)
-- [x] dependabot configuré (sécurité + mises à jour)
-- [x] Documentation complète dans `docs/`
-- [x] Sécurisation du dépôt (CODEOWNERS, SECURITY)
-- [x] README global + README images/
+- [x] Base HTML/CSS/JS
+- [x] Identité Macramé-Tech
+- [x] Sécurité GitHub
