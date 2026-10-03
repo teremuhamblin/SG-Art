@@ -1,0 +1,15 @@
+name: SG-Art Discussion Template
+description: Modèle pour discussions générales
+
+sections:
+  - title: Sujet
+    placeholder: "Décrire le thème de la discussion."
+
+  - title: Contexte
+    placeholder: "Informations utiles pour comprendre le sujet."
+
+  - title: Objectif
+    placeholder: "Ce que vous souhaitez obtenir de cette discussion."
+
+  - title: Ressources
+    placeholder: "Liens, documents, références."
