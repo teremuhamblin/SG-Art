@@ -1,0 +1,19 @@
+name: SG-Art Security Policy
+description: Politique de sécurité pour signaler les vulnérabilités
+
+supported_versions:
+  - "v1.x"
+  - "v2.x"
+  - "v3.x"
+
+reporting:
+  email: teremu@contact.local
+  guidelines:
+    - Fournir une description claire de la vulnérabilité
+    - Inclure étapes de reproduction
+    - Ne pas divulguer publiquement avant correction
+
+response:
+  - Accusé de réception sous 48h
+  - Analyse et correction prioritaire
+  - Publication d’un patch si nécessaire
