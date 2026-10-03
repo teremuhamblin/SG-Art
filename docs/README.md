@@ -1,4 +1,5 @@
-# SG-Art — Documentation
+# SG-Art
+- Documentation
 
 Ce dossier `docs/` contient la documentation essentielle du projet **SG-Art**, un mini‑site artistique dédié au macramé.
 
