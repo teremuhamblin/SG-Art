@@ -20,6 +20,8 @@
 ### 📁 Structure du dépôt
 ```
 SG-Art/
+│── README.md
+│── .gitignore
 │── index.html     # Page principale du site
 │── style.css      # Styles optimisés
 │── script.js      # Logique JS légère
