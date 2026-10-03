@@ -1,48 +1,37 @@
 ###### README.md >> markdown
-# SG@Art 🎨🌐
+# SG@Art 🎨🌐✨
+>Plateforme artistique avancée fusionnant macramé, *IA et interface Quantum‑Era*.
 
-- Un `micro‑projet` artistique et web, léger, optimisé et prêt à être déployé.  
-- SG@Art combine :
+### 🚀 Neural Macramé
 ```text
-- création visuelle,
-- présentation moderne, et code propre pour un rendu simple mais professionnel.
+- IA générative pour motifs macramé  
+- Interface neuro‑réactive  
+- Rendu WebGPU tressé  
+- Galerie XR holographique  
+- Animations complexes en temps réel  
 ```
 
-### ✔️ État du projet
+### 📁 Structure du site
+- **`index.html`**
+>🌐 — Interface principale  
+- **`style.css`**
+>🎨 — Design Quantum‑Era  
+- **`script.js`**
+>⚙️ — Logique & modules interactifs  
+- **`images/`**
+>🖼️ — Logos, badges, SVG animés  
+- **`docs/`**
+>📚 — Documentation complète  
+- **`.github/`**
+>🔧 — Sécurité & workflows  
+
+### 🔒 Sécurité
 ```text
-- [x] Structure HTML optimisée (index.html)  
-- [x] Styles propres et responsives (style.css)  
-- [x] Script léger et performant (script.js)  
-- [x] Version stable prête à l’usage  
-- [x] Compatible navigateurs modernes  
+- Audit IA complet  
+- Sandbox GPU/WebGPU  
+- CI/CD Quantum‑Era renforcé
 ```
 
-### 📁 Structure du dépôt
-```
-SG-Art/
-│── .github/       # Dossier et centre de commandement du projet
-│── docs/          # Dossier de documentations
-│── images/        # Dossier des images 
-│── README.md      # Dépôt principal
-│── LICENSE        # Droits et limites dutilosations
-│── .gitignore     # Regle d'exclusion 
-│── index.html     # Page principale du site
-│── style.css      # Styles optimisés
-│── script.js      # Logique JS légère
-```
-
-### 🚀 Fonctionnalités
-- 🎨 Interface simple et élégante  
-- ⚡ Chargement rapide (optimisations appliquées)  
-- 📱 Responsive pour mobile et desktop  
-- 🧩 Code clair, organisé et facilement modifiable  
-
-### 🔧 Installation & utilisation
-```text
-1. Télécharger ou cloner le dépôt  
-2. Ouvrir index.html dans votre navigateur  
-3. Modifier style.css ou script.js selon vos besoins
-```
-
-### 🌟 Objectif du projet
->Proposer une base SG‑Art minimaliste, propre et efficace pour créer ou exposer des contenus artistiques sur le web.
+### 📜 Licence
+**Licence SG-Art v14.04**
+- *Usage personnel et commercial limité.*
