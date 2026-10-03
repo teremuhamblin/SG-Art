@@ -1,0 +1,22 @@
+name: SG-Art Issue Template
+description: Modèle d’issue pour bug ou demande
+
+sections:
+  - title: Type d’issue
+    options:
+      - Bug
+      - Feature Request
+      - Amélioration
+      - Question
+
+  - title: Description
+    placeholder: "Décrire le problème ou la demande."
+
+  - title: Reproduction (pour bugs)
+    placeholder: "Étapes pour reproduire."
+
+  - title: Attendu
+    placeholder: "Résultat attendu."
+
+  - title: Captures / Logs
+    placeholder: "Ajouter si nécessaire."
