@@ -1,0 +1,45 @@
+# --- SG-Art Web Project ---
+
+# OS / système
+.DS_Store
+Thumbs.db
+
+# Éditeurs / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (si jamais tu ajoutes un build plus tard)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache navigateur / outils
+.cache/
+dist/
+build/
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+
+# Environnements
+.env
+.env.local
+.env.*.local
+
+# Backups
+*.bak
+*.old
+
+# Exclusions spécifiques SG-Art
+# (On garde uniquement index.html, style.css, script.js)
+!.gitignore
+!index.html
+!style.css
+!script.js
