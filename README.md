@@ -12,6 +12,7 @@
 ```
 
 ### 📁 Structure du site
+```text
 - **`index.html`**
 >🌐 — Interface principale  
 - **`style.css`**
@@ -23,7 +24,8 @@
 - **`docs/`**
 >📚 — Documentation complète  
 - **`.github/`**
->🔧 — Sécurité & workflows  
+>🔧 — Sécurité & workflows
+``` 
 
 ### 🔒 Sécurité
 ```text
