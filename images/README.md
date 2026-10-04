@@ -1,23 +1,22 @@
 📁 Dossier images/
 
-Ce dossier contient toutes les ressources visuelles utilisées dans le projet :  
-logos, icônes, photos, rendus, illustrations et assets graphiques.
+Ce dossier contient toutes les ressources visuelles du projet SG‑Art :
 
-📌 Contenu
-- Images du site  
-- Ressources pour le design  
-- Assets utilisés dans les pages HTML/CSS/JS  
+- Logos du site  
+- Badges SVG  
+- Illustrations et visuels  
+- Images utilisées dans les pages HTML/CSS/JS  
 
 🔧 Utilisation
-Importer les images via un chemin relatif :
 
 `html
-<img src="images/nom-de-l-image.png" alt="Description">
+<img src="images/nom-du-fichier.ext" alt="Description">
 `
 
 ✔️ Bonnes pratiques
-- Nommer les fichiers clairement  
-- Garder des formats légers (PNG, JPG, WEBP)  
-- Éviter les doublons  
+
+- Utiliser des noms de fichiers clairs  
+- Préférer les formats légers (SVG, WEBP, PNG)  
+- Garder une structure simple et sans doublons  
 
 ---
