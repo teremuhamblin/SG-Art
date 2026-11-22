@@ -1,5 +1,5 @@
-# 📄 SG@Art v1.2.0
-
+# 📄 SG@Art
+### v10.0.0
 ### Structure du projet SG-Art
 ```text
 SG-Art/
