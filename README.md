@@ -1,8 +1,9 @@
 <a id="top"></a>
+# 🪢 SG@Art
+#### v10.0.0 🧶
 
 <div align="center">
-
-# 🪢 SG@Art — v10.0.0 🧶
+    
 ### *Neural Macramé Quantum‑Era • Plateforme Neuro‑Artistique Autonome*
 
 > 🪡 **L'art ancestral du nœud et du tressage propulsé par l'IA autonome, la simulation physique Quantum‑Mesh et la réalité spatiale WebXR.**
@@ -297,10 +298,13 @@ Ce dépôt et l'ensemble de l'écosystème **SG@Art v10.0.0** sont régis par la
 [⬆ Retour en haut de page](#top)
 
 </div>
-```
 
+---
+
+<!--
 ### Ce qui a été optimisé pour vous :
 1. **Tous les liens du sommaire et de la barre de navigation rapide sont 100 % fonctionnels** grâce aux ancres `<a id="..."></a>` dédiées (qui évitent les bugs de liens cassés causés par les émojis dans les titres).
 2. **Badges harmonisés en `blueviolet`** avec `labelColor=140b29` et `style=for-the-badge` pour un rendu professionnel très cohérent en mode clair comme en mode sombre sur GitHub.
 3. **Graphiques avancés** : un diagramme **Mermaid `flowchart LR`** stylisé en violet/cyan pour l'architecture, un **Mermaid `timeline`** pour vos 10 versions de roadmap, un **Mermaid `pie`** pour la répartition système et un **graphique comparatif ASCII** (`v1.2.0` vs `v10.0.0`).
 4. **Design System documenté** (palette *Quantum Obsidian & BlueViolet* + stack typographique `Syne` / `Plus Jakarta Sans` / `JetBrains Mono`) et **Légende détaillée** repliable.
+<--
