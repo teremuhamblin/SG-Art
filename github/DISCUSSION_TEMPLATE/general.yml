@@ -1,0 +1,40 @@
+title: "[Discussion] "
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💬 SG@Art Discussion Template
+        Modèle pour discussions générales autour de **SG@Art**.
+
+  - type: input
+    id: sujet
+    attributes:
+      label: Sujet
+      placeholder: "Décrire le thème de la discussion."
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+      placeholder: "Informations utiles pour comprendre le sujet."
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectif
+    attributes:
+      label: Objectif
+      placeholder: "Ce que vous souhaitez obtenir de cette discussion."
+    validations:
+      required: false
+
+  - type: textarea
+    id: ressources
+    attributes:
+      label: Ressources
+      placeholder: "Liens, documents, références."
+    validations:
+      required: false
