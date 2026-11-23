@@ -1,0 +1,54 @@
+name: SG-Art Issue Template
+description: Modèle d’issue pour bug ou demande sur SG@Art
+title: "[SG@Art] "
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🪢 Nouveau signalement ou demande — SG@Art v10.0.0
+        Merci de remplir les champs ci-dessous. *(Pour une faille de sécurité, merci de passer par notre politique de sécurité et non par une issue publique.)*
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type d’issue
+      options:
+        - Bug
+        - Feature Request
+        - Amélioration
+        - Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Décrire le problème ou la demande."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction (pour bugs)
+      placeholder: "Étapes pour reproduire."
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Attendu
+      placeholder: "Résultat attendu."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Captures / Logs
+      placeholder: "Ajouter si nécessaire (captures d'écran, logs console, etc.)."
+    validations:
+      required: false
