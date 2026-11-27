@@ -1,147 +1,167 @@
-<!-- HOME SECTION -->
-    <section id="home" class="section home active gpu">
-        <div class="home-info gpu">
-            <h3>Hello I'm</h3>
-            <h1>SG@Art</h1>
-            <h3>Stack Developer Graphic Artistry</h3>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="SG@Art — portfolio créatif et aperçu paramétrique de motifs de macramé.">
+  <title>SG@Art — Portfolio & atelier de macramé</title>
+  <link rel="icon" href="./images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-            <p class="desc">
-                I am a dedicated Macramé Art Developer, crafting modern, elegant, and structurally refined macramé pieces.
-            </p>
+  <nav class="nav" aria-label="Navigation principale">
+    <ul class="nav-list">
+      <li class="active"><a href="#home" aria-current="page"><span aria-hidden="true">⌂</span><span class="tool-tip">Accueil</span></a></li>
+      <li><a href="#about"><span aria-hidden="true">✳</span><span class="tool-tip">Atelier</span></a></li>
+      <li><a href="#resume"><span aria-hidden="true">◫</span><span class="tool-tip">Parcours</span></a></li>
+      <li><a href="#portfolio"><span aria-hidden="true">▦</span><span class="tool-tip">Collection</span></a></li>
+      <li><a href="#contact"><span aria-hidden="true">✉</span><span class="tool-tip">Contact</span></a></li>
+    </ul>
+  </nav>
 
-            <div class="btn-sci gpu">
-                <a href="./files/SG@Art.pdf" download class="btn gpu">Download SHEETS</a>
-
-                <div class="sci">
-                    <a target="_blank" href="https://github.com/teremuhamblin" aria-label="GitHub Profile" class="gpu">
-                        <i class="fa-brands fa-github"></i>
-                        <span class="tool-tip">Github</span>
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/teremuhamblin/" aria-label="LinkedIn Profile" class="gpu">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span class="tool-tip">Linkedin</span>
-                    </a>
-                </div>
+  <main id="main-content" class="container">
+    <div class="box">
+      <section id="home" class="section active" aria-labelledby="home-title">
+        <div class="hero-layout">
+          <div class="home-info">
+            <div class="badge-row"><span class="status-pill"><span class="status-dot" aria-hidden="true"></span>Portfolio créatif</span><span class="status-pill">Macramé · Design · Web</span></div>
+            <p class="eyebrow">Création artisanale et numérique</p>
+            <h1 id="home-title">SG@Art</h1>
+            <h2>Des motifs pensés avec précision, noués avec intention.</h2>
+            <p class="desc">Un espace dédié au macramé, à la création visuelle et à l’expérimentation de motifs paramétriques.</p>
+            <div class="btn-group">
+              <a class="btn" href="#about">Découvrir l’atelier</a>
+              <a class="btn btn-secondary" href="#portfolio">Voir la collection</a>
             </div>
-        </div>
-
-        <div class="img-wrapper gpu">
-            <div class="img-box home-img gpu">
-                <img src="./images/sg@art.png"
-                     alt="SG@Art"
-                     loading="lazy"
-                     decoding="async"
-                     class="gpu">
+            <div class="sci" aria-label="Réseaux professionnels">
+              <a href="https://github.com/teremuhamblin" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub (nouvel onglet)">GH</a>
+              <a href="https://www.linkedin.com/in/teremuhamblin/" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn (nouvel onglet)">in</a>
             </div>
+          </div>
+          <div class="img-wrapper">
+            <figure class="img-box">
+              <img src="./images/SG@Art.jpg" alt="Visuel de présentation SG@Art" width="900" height="900" fetchpriority="high" decoding="async">
+              <figcaption>SG@Art — atelier de création</figcaption>
+            </figure>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section about gpu">
-        <div class="about-info gpu">
-            <h2>About Me</h2>
-            <p>
-                I am SG@Art — Stack Developer & Graphic Artistry.
-                I design architectures and macramé artworks with precision, discipline, and modern aesthetics.
-            </p>
+      <section id="about" class="section" aria-labelledby="studio-title" hidden>
+        <div class="studio-info">
+          <p class="eyebrow">Atelier paramétrique</p>
+          <h2 id="studio-title">Explorer un motif</h2>
+          <p>Modifiez les paramètres pour observer une interprétation graphique du tressage. La prévisualisation et le métrage sont indicatifs.</p>
 
-            <p>
-                My work blends <strong>full‑stack development</strong> with <strong>macramé structural art</strong>,
-                creating elegant, optimized and artistic digital experiences.
-            </p>
-        </div>
-
-        <div class="img-wrapper gpu">
-            <div class="img-box gpu">
-                <img src="./images/macrame1.jpg"
-                     alt="Macramé Art"
-                     loading="lazy"
-                     decoding="async"
-                     class="gpu">
+          <div class="bento-grid">
+            <div class="bento-card">
+              <div class="field">
+                <label for="seed-input">Graine du motif</label>
+                <input id="seed-input" name="seed" type="text" value="SG-ART-120" maxlength="32" autocomplete="off" spellcheck="false">
+              </div>
+              <div class="field">
+                <label for="knot-type">Type de nœud</label>
+                <select id="knot-type" name="knot-type">
+                  <option value="flat">Nœud plat</option>
+                  <option value="spiral">Spirale</option>
+                  <option value="feston">Feston</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="density-range">Densité : <output id="density-out" for="density-range">20</output></label>
+                <input id="density-range" name="density" type="range" min="4" max="40" value="20">
+              </div>
+              <p id="rope-estimate" aria-live="polite">Estimation en attente.</p>
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button" data-action="webxr">Vérifier WebXR</button>
+                <button class="btn" type="button" data-export="svg" data-item="suspension">Exporter en SVG</button>
+                <button class="btn btn-secondary" type="button" data-export="json">Exporter les paramètres JSON</button>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <!-- RESUME SECTION -->
-    <section id="resume" class="section resume gpu">
-        <div class="resume-info gpu">
-            <h2>Resume</h2>
-
-            <h3>Skills</h3>
-            <ul>
-                <li>Full‑Stack Development (HTML, CSS, JS)</li>
-                <li>Graphic Artistry & Macramé Design</li>
-                <li>Performance Optimization</li>
-                <li>Minimalist UI/UX Architecture</li>
-            </ul>
-
-            <h3>Experience</h3>
-            <p>
-                Creator of SG@Art — building modern, artistic, and optimized digital/macramé systems.
-            </p>
-
-            <h3>Achievements</h3>
-            <p>
-                Multiple macramé artworks, optimized mini‑sites, GPU‑accelerated interfaces,
-                and Quantum‑Era design modules.
-            </p>
-        </div>
-    </section>
-
-    <!-- MARKET / PORTFOLIO SECTION -->
-    <section id="portfolio" class="section portfolio gpu">
-        <div class="portfolio-info gpu">
-            <h2>Market</h2>
-            <p>Macramé creations available in the SG@Art collection.</p>
-
-            <div class="grid gpu">
-
-                <div class="card gpu">
-                    <h3>Suspension Macramé</h3>
-                    <p>Handcrafted structural piece.</p>
-                    <button class="btn gpu">View</button>
-                </div>
-
-                <div class="card gpu">
-                    <h3>Bracelet Macramé</h3>
-                    <p>Minimalist and elegant.</p>
-                    <button class="btn gpu">View</button>
-                </div>
-
-                <div class="card gpu">
-                    <h3>Wall Decoration</h3>
-                    <p>Signature SG@Art style.</p>
-                    <button class="btn gpu">View</button>
-                </div>
-
+            <div class="bento-card">
+              <h3>Aperçu du motif</h3>
+              <p id="gpu-status" role="status" aria-live="polite">Initialisation du rendu…</p>
+              <div class="canvas-stage">
+                <canvas id="macrame-canvas" width="640" height="480" aria-label="Aperçu graphique paramétrique du motif de macramé">Votre navigateur ne prend pas en charge l’affichage Canvas.</canvas>
+              </div>
+              <p class="caption">Le rendu peut utiliser WebGPU, WebGL2 ou Canvas 2D selon la prise en charge du navigateur.</p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section contact gpu">
-        <div class="contact-info gpu">
-            <h2>Contact</h2>
-            <p>Get in touch with SG@Art.</p>
-
-            <form class="form gpu">
-                <label>Name</label>
-                <input type="text" placeholder="Your name">
-
-                <label>Email</label>
-                <input type="email" placeholder="Your email">
-
-                <label>Message</label>
-                <textarea placeholder="Your message"></textarea>
-
-                <button type="submit" class="btn gpu">Send</button>
-            </form>
-
-            <div class="contact-details gpu">
-                <p>Email: contact@sg-art.fr</p>
-                <p>Instagram: @sg_art</p>
-            </div>
+      <section id="resume" class="section" aria-labelledby="resume-title" hidden>
+        <div class="resume-info">
+          <p class="eyebrow">À propos</p>
+          <h2 id="resume-title">Design, artisanat et développement web</h2>
+          <p>SG@Art réunit une pratique du macramé et un intérêt pour la création d’expériences numériques soignées.</p>
+          <div class="bento-grid">
+            <article class="bento-card"><h3>Création textile</h3><p>Exploration de structures nouées, de compositions et de variations de motifs.</p></article>
+            <article class="bento-card"><h3>Développement front-end</h3><p>HTML, CSS et JavaScript natifs, avec attention portée à l’accessibilité et à l’adaptation mobile.</p></article>
+            <article class="bento-card"><h3>Expérimentation</h3><p>Outils de visualisation paramétrique pour explorer des graines, des densités et des types de nœuds.</p></article>
+          </div>
         </div>
-    </section>
+      </section>
 
-</div>
+      <section id="portfolio" class="section" aria-labelledby="portfolio-title" hidden>
+        <div class="portfolio-info">
+          <p class="eyebrow">Sélection</p>
+          <h2 id="portfolio-title">Collection</h2>
+          <p>Quelques pistes de création autour du macramé et de la composition.</p>
+          <div class="grid">
+            <article class="card"><div><h3>Suspension murale</h3><p>Composition verticale à nœuds structurés.</p></div><button class="btn btn-secondary" type="button" data-export="svg" data-item="suspension">Exporter le motif</button></article>
+            <article class="card"><div><h3>Bracelet tressé</h3><p>Variation compacte autour du nœud plat.</p></div><button class="btn btn-secondary" type="button" data-export="svg" data-item="bracelet">Exporter le motif</button></article>
+            <article class="card"><div><h3>Décoration murale</h3><p>Étude de rythme et de répétition.</p></div><button class="btn btn-secondary" type="button" data-export="svg" data-item="wall">Exporter le motif</button></article>
+          </div>
+          <p class="caption">Les commandes d’export génèrent une représentation graphique paramétrique ; elles ne constituent pas des patrons certifiés pour la fabrication.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title" hidden>
+        <div class="contact-info">
+          <p class="eyebrow">Échangeons</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>Pour une question ou une collaboration, préparez un message dans votre application de messagerie.</p>
+          <form class="form" action="mailto:contact@sg-art.fr" method="post" enctype="text/plain">
+            <div class="field"><label for="contact-name">Nom</label><input id="contact-name" name="Nom" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="contact-email">Adresse e-mail</label><input id="contact-email" name="Email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="contact-message">Message</label><textarea id="contact-message" name="Message" rows="5" minlength="5" required></textarea></div>
+            <button class="btn" type="submit">Ouvrir mon application mail</button>
+          </form>
+          <p class="caption">Ce formulaire n’envoie pas les données à un serveur. Il nécessite une application de messagerie configurée.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© <span id="current-year">SG@Art</span></span>
+        <a href="./README.md">À propos du projet</a>
+        <a href="./LICENSE">Licence</a>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    const year = document.getElementById("current-year");
+    if (year) year.textContent = String(new Date().getFullYear());
+
+    // Les sections non sélectionnées sont masquées aussi aux technologies d’assistance.
+    const syncSectionVisibility = () => {
+      document.querySelectorAll(".section").forEach((section) => {
+        section.hidden = !section.classList.contains("active");
+      });
+    };
+    document.addEventListener("click", (event) => {
+      if (event.target.closest('.nav-list a[href^="#"]')) {
+        requestAnimationFrame(syncSectionVisibility);
+      }
+    });
+    window.addEventListener("hashchange", syncSectionVisibility);
+    syncSectionVisibility();
+  </script>
+</body>
+</html>
