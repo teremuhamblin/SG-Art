@@ -1,4 +1,5 @@
-# SG-Art — Code Ownership
-# Tous les fichiers sont sous la responsabilité de teremuhamblin 
+# Propriétaires par défaut de tout le dépôt
+*       @teremuhamblin
 
-* @teremuhamblin 
+# Workflows et configuration GitHub
+.github/   @teremuhamblin
