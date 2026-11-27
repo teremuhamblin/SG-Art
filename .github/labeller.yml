@@ -1,0 +1,23 @@
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'docs/**'
+
+site:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.html'
+          - '**/*.css'
+          - '**/*.js'
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/**'
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'package.json'
+          - 'package-lock.json'
