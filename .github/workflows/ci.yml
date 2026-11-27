@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-html:
+    name: Validation HTML & liens
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Installation de htmlhint
+        run: npm install --global htmlhint
+
+      - name: Lint des fichiers HTML
+        run: htmlhint '**/*.html' --ignore 'node_modules/**'
+
+      - name: Vérification des liens internes
+        run: |
+          echo "Vérification basique des références internes (href/src locaux)..."
+          missing=0
+          for ref in $(grep -rhoE '(href|src)="[^"#?]+"' --include='*.html' . | sed -E 's/(href|src)="([^"]+)"/\2/' | grep -vE '^(https?://|mailto:|tel:|//)' | sort -u); do
+            if [ ! -e "$ref" ]; then
+              echo "::warning::Référence interne introuvable : $ref"
+              missing=$((missing+1))
+            fi
+          done
+          echo "$missing référence(s) interne(s) en avertissement."
