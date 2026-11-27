@@ -1,0 +1,27 @@
+name: Gestion des issues et PR inactives
+
+on:
+  schedule:
+    - cron: '30 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    name: Marquage des éléments inactifs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Marquer et fermer les éléments inactifs
+        uses: actions/stale@v9
+        with:
+          days-before-stale: 30
+          days-before-close: 7
+          stale-issue-message: 'Cette issue est inactive depuis 30 jours. Elle sera fermée automatiquement dans 7 jours sans activité.'
+          stale-pr-message: 'Cette pull request est inactive depuis 30 jours. Elle sera fermée automatiquement dans 7 jours sans activité.'
+          stale-issue-label: 'stale'
+          stale-pr-label: 'stale'
+          exempt-issue-labels: 'pinned,security'
+          exempt-pr-labels: 'pinned,security'
