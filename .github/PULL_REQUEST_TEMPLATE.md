@@ -1,26 +1,17 @@
-## 📝 Description
+## Description
 
-<!-- Décrire clairement les modifications apportées. -->
+<!-- Décrivez brièvement les changements apportés. -->
 
-<!-- Issue liée (optionnel) : Closes # -->
+## Type de changement
 
----
+- [ ] 🐛 Correction de bug
+- [ ] ✨ Nouvelle fonctionnalité
+- [ ] 📝 Documentation
+- [ ] 🎨 UI/UX
+- [ ] 🔧 Configuration / CI
 
-## 🎯 Motivation
+## Checklist
 
-<!-- Pourquoi ce changement est nécessaire. -->
-
----
-
-## 🧪 Tests
-
-<!-- Lister les tests effectués (navigateurs testés, WebGPU/repli, WebXR, etc.). -->
-
----
-
-## ✅ Checklist
-
-- [ ] Code conforme aux standards du projet
-- [ ] Documentation mise à jour (`README.md`, `docs/`, etc.)
-- [ ] Aucun fichier inutile ou secret ajouté
-- [ ] Build / lancement local fonctionnel
+- [ ] Le code respecte les conventions du projet
+- [ ] Les tests / le lint passent localement
+- [ ] La documentation a été mise à jour si nécessaire
