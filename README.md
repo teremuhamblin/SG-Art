@@ -7,6 +7,10 @@
 
 ---
 
+[![Déploiement GitHub Pages](https://github.com/teremuhamblin/SG-Art/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/teremuhamblin/SG-Art/actions/workflows/deploy-pages.yml)
+
+---
+
 **SG@Art** *associe un portfolio artistique à un aperçu interactif de motifs de macramé*.
 - Le projet est un site statique en ***HTML, CSS et JavaScript*** :
    - *Il peut être consulté sans installation ni service* ***backend***.
