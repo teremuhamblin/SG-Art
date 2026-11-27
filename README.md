@@ -1,16 +1,25 @@
+###### README.md >> markdown 
 <a id="top"></a>
 
 # SG@Art
+### Portfolio créatif & atelier paramétrique de macramé
+### — v1.2.0
 
-### Portfolio créatif & atelier paramétrique de macramé — v1.2.0
+---
 
-SG@Art associe un portfolio artistique à un aperçu interactif de motifs de macramé. Le projet est un site statique en HTML, CSS et JavaScript : il peut être consulté sans installation ni service backend.
+**SG@Art** *associe un portfolio artistique à un aperçu interactif de motifs de macramé*.
+- Le projet est un site statique en ***HTML, CSS et JavaScript*** :
+   - *Il peut être consulté sans installation ni service* ***backend***.
+
+---
 
 [![Version](https://img.shields.io/badge/version-1.2.0-8b5cf6?style=for-the-badge)](https://github.com/teremuhamblin/SG-Art)
-[![HTML](https://img.shields.io/badge/HTML-5-e34f26?style=for-the-badge&logo=html5&logoColor=white)](#stack)
-[![CSS](https://img.shields.io/badge/CSS-Responsive-1572b6?style=for-the-badge&logo=css3&logoColor=white)](#stack)
-[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-f7df1e?style=for-the-badge&logo=javascript&logoColor=111)](#stack)
-[![Licence](https://img.shields.io/badge/licence-see_LICENSE-6e7681?style=for-the-badge)](./LICENSE)
+[![HTML](https://img.shields.io/badge/HTML-5-8b5cf6?style=for-the-badge&logo=html5&logoColor=white)](#stack)
+[![CSS](https://img.shields.io/badge/CSS-Responsive-8b5cf6?style=for-the-badge&logo=css3&logoColor=white)](#stack)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-8f5cf6?style=for-the-badge&logo=javascript&logoColor=111)](#stack)
+[![Licence](https://img.shields.io/badge/licence-see_LICENSE-8b5fc6?style=for-the-badge)](./LICENSE)
+
+---
 
 **Navigation :** [Aperçu](#aperçu) · [Fonctionnalités](#fonctionnalités) · [Démarrage](#démarrage) · [Utilisation](#utilisation) · [Architecture](#architecture) · [Limites connues](#limites-connues) · [Licence](#licence)
 
