@@ -1,23 +1,18 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "npm"
+      interval: 'weekly'
     commit-message:
-      prefix: "chore(deps)"
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
+      prefix: 'chore(deps)'
+    labels:
+      - 'dependencies'
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "ci"
+      interval: 'weekly'
     commit-message:
-      prefix: "chore(ci)"
+      prefix: 'chore(deps)'
+    labels:
+      - 'dependencies'
